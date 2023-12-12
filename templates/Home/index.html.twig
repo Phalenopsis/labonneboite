@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    {% include 'Home/_form.html.twig' %}
+
+    {% if data is defined%}
+        {{ dump(data) }}
+        {% else %}
+        No data
+    {% endif %}
+
+    {% if test is defined%}
+        {{ dump(test) }}
+        {% else %}
+        No test
+    {% endif %}
+{% endblock %}
